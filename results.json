@@ -1,0 +1,34 @@
+{
+ "opportunities": 94240,
+ "lead_scoring": {
+  "logistic": {
+   "auc": 0.729,
+   "brier": 0.1837,
+   "top20_share_of_wins": 36.5,
+   "max_calibration_gap_pts": 2.6
+  },
+  "gradient_boosting": {
+   "auc": 0.747,
+   "brier": 0.1786,
+   "top20_share_of_wins": 38.2,
+   "max_calibration_gap_pts": 3.6
+  },
+  "oracle_auc": 0.75,
+  "base_win_rate": 30.7
+ },
+ "forecast_backtest": {
+  "months_evaluated": 7,
+  "stage_weighted_mape": 82.8,
+  "stage_weighted_bias_pct": 82.8,
+  "monte_carlo_raw_mape": 7.8,
+  "monte_carlo_calibrated_mape": 3.8,
+  "raw_p10_p90_coverage_pct": 14.3,
+  "calibrated_p10_p90_coverage_pct": 85.7
+ },
+ "capacity": {
+  "peak_agents": 5,
+  "agent_hours_shaped": 78,
+  "agent_hours_flat_staffing": 120,
+  "saving_pct": 35.0
+ }
+}
