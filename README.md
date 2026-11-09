@@ -31,7 +31,7 @@ Models are trained on months 0–11 and tested on months 12–15, so they never 
 
 The pipeline is forecast at 7 month-ends, each using only data known on that day.
 
-| Method | Mean error | Bias | Months the actual fell inside the P10–P90 band |
+| Method | MAPE (mean absolute % error) | Bias | Months the actual fell inside the P10–P90 band |
 | --- | --- | --- | --- |
 | Stage-weighted (CRM default: 10% / 30% / 55% by stage) | **82.8%** | +82.8% (always over) | n/a |
 | Monte Carlo, raw (deal probability × time-to-close, 5,000 draws) | 7.8% | | 14.3% (bands far too narrow) |
